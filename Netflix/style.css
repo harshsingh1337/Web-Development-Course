@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #e50914;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/6caaa0e6-35df-4479-9248-22df187cbfc8/2efc664d-9aef-4d71-bf40-5da2a28c8a0e/IN-en-20230522-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  background: #e50914;
+  border: none;
+  padding: 10px 25px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.hero-content button:hover {
+  background: #f40612;
+}
+
+/* Movies Row */
+.movies-row {
+  padding: 100px 20px 20px;
+}
+
+.movies-row h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.movie-card {
+  background: #333;
+  height: 220px;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* Sample backgrounds for movie cards */
+.movie-card:nth-child(1) { background-image: url('https://via.placeholder.com/150x220?text=Movie+1'); }
+.movie-card:nth-child(2) { background-image: url('https://via.placeholder.com/150x220?text=Movie+2'); }
+.movie-card:nth-child(3) { background-image: url('https://via.placeholder.com/150x220?text=Movie+3'); }
+.movie-card:nth-child(4) { background-image: url('https://via.placeholder.com/150x220?text=Movie+4'); }
+.movie-card:nth-child(5) { background-image: url('https://via.placeholder.com/150x220?text=Movie+5'); }
+.movie-card:nth-child(6) { background-image: url('https://via.placeholder.com/150x220?text=Movie+6'); }
